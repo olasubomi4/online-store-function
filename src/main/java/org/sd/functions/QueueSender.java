@@ -4,10 +4,13 @@
 //import com.azure.storage.queue.QueueClientBuilder;
 //import com.azure.storage.queue.models.SendMessageResult;
 //
+//import java.nio.charset.StandardCharsets;
+//import java.util.Base64;
+//
 //public class QueueSender {
 //    public static void main(String[] args) {
+////
 //        String queueName = "orders";
-//
 //        QueueClient queueClient = new QueueClientBuilder()
 //                .connectionString(connectionString)
 //                .queueName(queueName)
@@ -16,7 +19,7 @@
 ////        // Create the queue if it doesn't exist
 ////        queueClient.createIfNotExists();
 //
-//        String message = "Hello from Java!";
+//        String message = Base64.getEncoder().encodeToString("Java code test7".getBytes(StandardCharsets.UTF_8));
 //
 //        SendMessageResult s= queueClient.sendMessage(message);
 //
