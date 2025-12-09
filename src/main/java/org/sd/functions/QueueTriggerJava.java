@@ -20,7 +20,7 @@ public class QueueTriggerJava {
 
     @FunctionName("online-store")
     public void run(
-        @QueueTrigger(name = "message", queueName = "orders", connection = "AZURE_STORAGE") String message,
+        @QueueTrigger(name = "message", queueName = "orders", connection = "AzureWebJobsStorage") String message,
         final ExecutionContext context
     ) {
 
