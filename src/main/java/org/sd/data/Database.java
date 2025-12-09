@@ -22,7 +22,7 @@ public class Database {
     }
 
     public boolean updateOrderStatus(long orderId, ExecutionContext context) {
-        String sql = "UPDATE orders SET status = ? WHERE id = ?";
+        String sql = "UPDATE customer_order SET status = ? WHERE id = ?";
 
 
         try (Connection conn = DriverManager.getConnection(dbUrl, dbUser, dbPassword);
