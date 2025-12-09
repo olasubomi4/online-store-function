@@ -38,6 +38,12 @@
             <version>2.23.4</version>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>com.azure</groupId>
+            <artifactId>azure-storage-queue</artifactId>
+            <version>12.20.0</version> <!-- or latest -->
+        </dependency>
     </dependencies>
 
     <build>
